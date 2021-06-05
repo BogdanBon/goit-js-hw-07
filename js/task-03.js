@@ -18,18 +18,23 @@ gallery.style.display = 'flex';
 gallery.style.flexDirection = 'column';
 gallery.style.listStyle = 'none';
 
-const listOfImages = [];
-
-images.forEach((image) => {
-  const list = document.createElement('li');
-  const myImg = document.createElement('img');
-  myImg.setAttribute('src', image.url);
-  myImg.setAttribute('alt', image.alt);
-  myImg.width = '320';
-
-  list.append(myImg);
-
-  listOfImages.push(list);
+images.forEach((image) =>{
+  gallery.insertAdjacentHTML('beforeend', `<li><img src= ${image.url} alt= '${image.alt}' width= 480></li>`
+  );
 })
 
-gallery.append(...listOfImages)
+// const listOfImages = [];
+
+// images.forEach((image) => {
+//   const list = document.createElement('li');
+//   const myImg = document.createElement('img');
+//   myImg.setAttribute('src', image.url);
+//   myImg.setAttribute('alt', image.alt);
+//   myImg.width = '320';
+
+//   list.append(myImg);
+
+//   listOfImages.push(list);
+// })
+
+// gallery.append(...listOfImages)
