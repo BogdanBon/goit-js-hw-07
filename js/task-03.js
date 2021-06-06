@@ -13,18 +13,18 @@ const images = [
   },
 ];
 
-const gallery = document.getElementById('gallery');
-gallery.style.display = 'flex';
-gallery.style.flexDirection = 'column';
-gallery.style.listStyle = 'none';
+// const gallery = document.getElementById('gallery');
+// gallery.style.display = 'flex';
+// gallery.style.flexDirection = 'column';
+// gallery.style.listStyle = 'none';
 
-let elements = [];
+// let elements = [];
 
-images.forEach((image) => {
-  elements.push(`<li><img src= ${image.url} alt= '${image.alt}' width= 480></li>`);
-})
+// images.forEach((image) => {
+//   elements.push(`<li><img src= ${image.url} alt= '${image.alt}' width= 480></li>`);
+// })
 
-gallery.insertAdjacentHTML('beforeend', [...elements].join(''));
+// gallery.insertAdjacentHTML('beforeend', [...elements].join(''));
 
 
 
