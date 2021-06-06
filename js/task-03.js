@@ -18,11 +18,26 @@ gallery.style.display = 'flex';
 gallery.style.flexDirection = 'column';
 gallery.style.listStyle = 'none';
 
-images.forEach((image) =>{
-  gallery.insertAdjacentHTML('beforeend', `<li><img src= ${image.url} alt= '${image.alt}' width= 480></li>`
-  );
+let elements = [];
+
+images.forEach((image) => {
+  elements.push(`<li><img src= ${image.url} alt= '${image.alt}' width= 480><li>`);
 })
 
+gallery.insertAdjacentHTML('beforeend', [...elements].join(''));
+
+
+// 2 ----------------------------------------------------
+// const listElement = document.createElement('li');
+
+// images.forEach((image) => {
+//   listElement.insertAdjacentHTML('beforeend', `<img src= ${image.url} alt= '${image.alt}' width= 480>`
+//   );
+// })
+
+// gallery.append(listElement)
+
+// 3 ----------------------------------------------------
 // const listOfImages = [];
 
 // images.forEach((image) => {
