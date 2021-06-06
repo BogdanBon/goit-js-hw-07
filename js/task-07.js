@@ -7,4 +7,4 @@ function checkInput() {
     textToChange.style.fontSize = inputToCheck.value + 'px';
 }
 
-inputToCheck.addEventListener('input', checkInput);
+inputToCheck.addEventListener('input', checkInput)
