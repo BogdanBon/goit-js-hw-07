@@ -21,7 +21,7 @@ gallery.style.listStyle = 'none';
 let elements = [];
 
 images.forEach((image) => {
-  elements.push(`<li><img src= ${image.url} alt= '${image.alt}' width= 480></li>`);
+  elements.push(`<li></li>`);
 })
 
 gallery.insertAdjacentHTML('beforeend', [...elements].join(''));
