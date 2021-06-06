@@ -27,7 +27,8 @@ images.forEach((image) => {
 gallery.insertAdjacentHTML('beforeend', [...elements].join(''));
 
 
-// 2 ----------------------------------------------------
+
+// 2 ---------------------------------------------------
 // const listElement = document.createElement('li');
 
 // images.forEach((image) => {
@@ -37,7 +38,7 @@ gallery.insertAdjacentHTML('beforeend', [...elements].join(''));
 
 // gallery.append(listElement)
 
-// 3 ----------------------------------------------------
+// 3 ---------------------------------------------------
 // const listOfImages = [];
 
 // images.forEach((image) => {
